@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(200, 247, 248);
+}
+.lista{
+    color: green;
+    font-family: Scada, sans-serif;
+}
+.title{
+    font-style: italic;
+    color: rgba(0, 110, 255, 0.911);
+    font-family: system-ui;
+    text-align: center;
+}
+p{
+    font-family: barlow semi-condensed, sans-serif;
+    color: #4287f5;
+    text-align: center;
+}
+.special-size{
+    height: 50px;
+    margin-left: 43px;
+    margin-bottom: 25px;
+}
+.footer{
+    margin-top: 130px;
+}
+.icons{
+    height: 25px;
+}
+#copyright-footer{
+    font-size: small;
+}
+.tableScroll{
+    overflow:auto; 
+    width: 100%;
+}
+
+tbody tr:nth-child(even) td{background:#f5f5f5;}
+
+.table-1{
+    color: #4287f5; 
+    font-family: Ubuntu, Helvetica, Arial, sans-serif; 
+    font-size: 13px; line-height: 22px; 
+    table-layout: auto; 
+    width: 100%; 
+    max-width: 900px;
+    min-width: 700px;
+    margin: 0 auto; 
+    border-collapse: collapse;
+}
+
+thead tr th{
+    padding: 2px 2px;
+    text-align: CENTER;
+    color: #fff; 
+    background-color: #1E344E; 
+    font-size: 15px; 
+    padding-left: 1%; 
+    height: 60px; 
+    border: none;
+}
+
+th p, td p{line-height: normal;}
+
+tr, td{height: 16px;}
+
+td, th{
+    text-align: center; 
+    padding:2px; 
+    vertical-align: middle;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: darkblue;
+}
+iframe{
+    margin: 0 0 25px 350px;
+
+}
+img{
+    max-width: 812px;
+    margin: 0 0 25px 300px;
+}
+h3{
+    color: darkmagenta;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+ul {
+    list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif")
+ }
+li{
+    color: darkmagenta;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+strong{
+    background-color: rgb(226, 23, 23);
+}

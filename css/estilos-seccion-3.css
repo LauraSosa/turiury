@@ -1,0 +1,5 @@
+.gradiente{
+    height: 20px;
+    background: linear-gradient(45deg, #7DCADD, transparent);
+    border-radius: 10px;
+}

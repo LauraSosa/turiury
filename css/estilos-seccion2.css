@@ -1,0 +1,31 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: #1B8BB8;
+    text-align: center;
+}
+.cajas{
+    width: 400px;
+    display: inline-block;
+}
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: 200px;
+    column-gap: 100px;
+    justify-content: space-evenly;
+    border: 2px solid #0566A3;
+}
+.animacion{
+    text-align: center !important;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    animation-name: example;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+@keyframes example{
+    from {background-color: white;}
+    to {background-color: #7DCADD;}
+}
