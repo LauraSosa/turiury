@@ -3,6 +3,12 @@
     text-align: center;
 }
 
+/* PALETA DE COLORES */
+$blanco: #FFFFFF;
+$azul-oscuro: #0566A3;
+$azul-claro: #1B8BB8;
+$celeste: #7DCADD;
+
 // HOME
 div.title{
     h1{
@@ -143,11 +149,11 @@ $departamentos: (
     animation-duration: 3s;
 }
 @keyframes example{
-    from {background-color: white;}
-    to {background-color: #7DCADD;}
+    from {background-color: $blanco;}
+    to {background-color: $celeste;}
 }
 
-$blue: #1B8BB8;
+
 div.enero{
     @media (max-width: 576px) {
         background-color: $blue;
@@ -161,20 +167,22 @@ div.enero{
 
 
 .footer{
-    background-color: #0566A3;
+    background-color: $blanco;
     overflow: hidden;
     color: white;
 }
 .icons{
     height: 25px;
+    margin: 5px;
 }
 #copyright-footer{
     font-size: small;
 }
 
 
-/* PALETA DE COLORES
-#FFFFFF
-#0566A3
-#1B8BB8
-#7DCADD */
+
+
+
+
+
+
