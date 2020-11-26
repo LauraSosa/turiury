@@ -3,7 +3,7 @@
     // text-align: center;
 }
 
-/* PALETA DE COLORES */
+// PALETA DE COLORES
 $blanco: #FFFFFF;
 $azul-oscuro: #0566A3;
 $azul-claro: #1B8BB8;
@@ -19,7 +19,6 @@ $celeste: #7DCADD;
     width: 100%;
     height: calc(100vh - 56px);
     max-height: 1200px;
-    // background-image: url();
     background-image: url(https://s3.amazonaws.com/turismorocha/atractivos/20/med/playa-la-balconada-091708900-1550190018.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,17 +33,6 @@ $celeste: #7DCADD;
     align-items: center;
 }
 
-// .bg-img:before{
-// content: "";
-// width: 100%;
-// min-height: 920px;
-// position: absolute;
-// top: 0;
-// left: 0;
-// background: linear-gradient(90deg, #eaeafb, #e6f3ff);
-// opacity: 0.5;
-// z-index: -1;
-// }
 div.title{
     h1{
         text-shadow: 2px 2px 8px $blanco;
@@ -104,9 +92,6 @@ h2{
     text-align: center !important;
 }
 
-.borde{
-    margin: 0 30px 0 30px;
-}
 
 $departamentos: (
     artigas: yellow,
