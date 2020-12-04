@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 *{
     font-family: 'Montserrat', sans-serif;
-    // text-align: center;
-}
 
+}
+h1, h2, h3{
+    font-family: 'Castoro', serif;
+}
 // PALETA DE COLORES
 $blanco: #FFFFFF;
 $azul-oscuro: #0566A3;
@@ -19,7 +23,7 @@ $celeste: #7DCADD;
     width: 100%;
     height: calc(100vh - 56px);
     max-height: 1200px;
-    background-image: url(https://s3.amazonaws.com/turismorocha/atractivos/20/med/playa-la-balconada-091708900-1550190018.jpg);
+    background-image: url(/img/playa-la-balconada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -84,77 +88,272 @@ div.title{
         background-color: $blanco;
         color: $azul-oscuro;
     }
+    h2{
+        text-align: center !important;
+    }
 
 
 
 // LUGARES
-h2{
-    text-align: center !important;
+.generico{
+    height: calc(100vh - 56px);
 }
-
-
-$departamentos: (
-    artigas: yellow,
-    cerro_largo: green,
-    montevideo: beige,
-    salto: red,
-    paysandu: blue,
-);
-
-@each $departamento, $color_fondo in $departamentos{
-    .colorcito--#{$departamento}{
-        background-color: $color_fondo;
+.centrado{
+    margin-top: 200px;
+    @media (max-width: 576px){
+        margin-top: 140px;
     }
 }
 
-
-.images{
-    width: 250px;
-    margin-bottom: 20px;
-}
-
-.flexbox{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.cajas{
-    width: 400px;
-    display: inline-block;
-}
-
-
-.animacion{
-    animation-name: example;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 3s;
-}
-@keyframes example{
-    from {background-color: $blanco;}
-    to {background-color: $celeste;}
-}
-
-
-div.enero{
-    @media (max-width: 576px) {
-        background-color: $azul-claro;
+#destinos{
+    font-weight: bold;
+        @media (max-width: 576px){
+        margin: 0 25px 0 25px;
     }
-}
+    }
 
-#contenedor_carousel_rincones{
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
-.completas{
+.contenedor{
     width: 100%;
+    height: 500px;
+    display: flex;
+}
+.fotos{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    background-color: black;
+    z-index: -1;
 }
 
+.hijo{
+    width: 50%;
+    height: 100%;
+}
+#hijo1{
+    background-color: #f48741;
+}
+#hijo2{
+    background-image: url(/img/unnamed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    background-color: black;
+    z-index: -1;
+}
+.nombre{
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-top: 400px;
+    text-shadow: 2px 2px 2px black;
+    @media (max-width: 576px) {
+        font-size: 27px;
+        margin-top: 420px;
+    }
+    @media (max-width: 978px) {
+        font-size: 40px;
+    }
+}
+.castoro{
+    text-align: center;
+    font-family: 'Castoro', serif;
+    color: white;
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 80px;
+    @media (max-width: 576px){
+        font-size: 13px;
+        margin-top: 26px;
+    }
+    @media (min-width: 577px) and (max-width: 800px) {
+        margin-top: 20px;
+    }
+}
+.mayor{
+    font-family: 'Castoro', serif;
+    color: $blanco;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    @media (max-width: 576px) {
+        font-size: 24px;
+    }
+}
+#hijo3{
+    background-image: url(/img/aguila.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    background-color: black;
+    z-index: -1;
+}
+#hijo4{
+    background-color: #c5ae91;
+}
+#hijo5{
+    background-image: url(/img/pde.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    background-color: black;
+    z-index: -1;
+}
+#hijo6{
+    background-color: #6a868fa1;
+}
+#hijo7{
+    background-image: url(/img/Villa-Serrana.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    background-color: black;
+    z-index: -1;
+}
+#hijo8{
+    background-color: #9acd32bd;
+}
+.locations{
+    font-family: 'Castoro', serif;
+    text-align: center;
+    font-weight: bold;
+}
+.bg-img-lugares{
+    position: absolute;
+    top: 56px;
+    right: 0;
+    z-index: -1;
+    margin: 0%;
+    width: 100%;
+    height: calc(100vh - 56px);
+    max-height: 1200px;
+    background-image: url(/img/playa-la-balconada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: opacity(0.6);
+}
+
+// GALERIA
+.bg-img{
+    position: fixed;
+    top: 56px;
+    right: 0;
+    z-index: -1;
+    margin: 0%;
+    width: 100%;
+    height: calc(100vh - 56px);
+    max-height: 1200px;
+    background-image: url(/img/playa-la-balconada.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: opacity(0.8);
+}
+
+.text-bg {
+    height: calc(100vh - 56px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrado-galeria{
+    height: calc(100vh - 56px);
+    margin-top: 25%;
+}
+
+
+.gallery {
+    width: 60%;
+    margin: 15px auto;
+    display: flex;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+    filter: blur(1px);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+// .images{
+//     width: 250px;
+//     margin-bottom: 20px;
+// }
+
+// .flexbox{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-evenly;
+// }
+
+// .cajas{
+//     width: 400px;
+//     display: inline-block;
+// }
+
+
+// .animacion{
+//     animation-name: example;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: ease-in;
+//     animation-duration: 3s;
+// }
+// @keyframes example{
+//     from {background-color: $blanco;}
+//     to {background-color: $celeste;}
+// }
+
+
+// div.enero{
+//     @media (max-width: 576px) {
+//         background-color: $azul-claro;
+//     }
+// }
+
+// #contenedor_carousel_rincones{
+//     max-width: 1000px;
+//     margin: 0 auto;
+// }
+
+// .completas{
+//     width: 100%;
+// }
+// CONTACTO
 .formulario{
     border: 4px solid $azul-oscuro;
     border-radius: 5px;
+    font-weight: 600;
+    color: #000000b0;
+}
+
+.bg-img-form{
+    position: absolute;
+    top: 56px;
+    right: 0;
+    z-index: -1;
+    margin: 0%;
+    width: 100%;
+    height: 132vh;
+    max-height: 1200px;
+    background-image: url(/img/casapueblo.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: opacity(0.5);
 }
 
 
@@ -171,8 +370,12 @@ footer.footer{
     font-size: small;
 }
 
-
-
+.img-fluid{
+    transition: all .5s;
+    &:hover{
+        filter: sepia(1.5);
+    }
+}
 
 
 
