@@ -11,57 +11,36 @@ $azul-claro: #1B8BB8;
 $celeste: #7DCADD;
 
 // HOME
-.bg-img{
-    position: absolute;
-    top: 56px;
-    right: 0;
-    z-index: -1;
-    margin: 0%;
-    width: 100%;
-    height: calc(100vh - 56px);
-    max-height: 1200px;
-    background-image: url(/img/playa-la-balconada.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
 .text-bg{
-    height: calc(100vh - 56px);
+    position: absolute;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #213d58f2;
 }
 
 div.title{
     h1{
         text-shadow: 2px 2px 8px $blanco;
         font-size: 40px;
+
         @media (max-width: 576px) {
             font-size: 25px;
         }
-        p{
-            font-size: 16px;
-            @media (max-width: 576px) {
-                font-size: 14px;
-            }
-        }
+
     }
 }
 
 .bandera{
-    transform: skewX(20deg);
-    @media (max-width: 576px) {
-        max-width: 140px;
-    }
     animation-name: deslizar;
     animation-iteration-count: 1;
     animation-duration: 2s;
 }
 @keyframes deslizar {
     from {
-    margin-left: -100%;
+    margin-top: -100%;
     }
     to {
     margin-left: 0;
@@ -72,12 +51,12 @@ div.title{
     border: 1px;
     border-radius: 3px;
     color: $blanco;
-    padding: 15px 32px;
+    padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-top: 40px;
+    margin-top: 13px;
     transition-duration: 0.4s;
     font-weight: bold;
 }
@@ -303,7 +282,7 @@ div.gallery img {
     z-index: -1;
     margin: 0%;
     width: 100%;
-    height: 132vh;
+    height: 120vh;
     max-height: 1200px;
     background-image: url(/img/casapueblo.jfif);
     background-repeat: no-repeat;
@@ -311,6 +290,13 @@ div.gallery img {
     background-position: center;
     background-attachment: fixed;
     filter: opacity(0.5);
+}
+
+.espacio-contacto{
+    height: 59px;
+    @media (max-width: 1200px) {
+        height: 66px;
+    }
 }
 
 // FOOTER
@@ -326,15 +312,3 @@ footer.footer{
 #copyright-footer{
     font-size: small;
 }
-
-// .img-fluid{
-//     transition: all .5s;
-//     &:hover{
-//         filter: sepia(1.5);
-//     }
-// }
-
-
-
-
-
