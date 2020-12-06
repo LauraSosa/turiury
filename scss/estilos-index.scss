@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lemonada&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
-*{
-    font-family: 'Montserrat', sans-serif;
 
-}
 h1, h2, h3{
-    font-family: 'Castoro', serif;
+    font-family: 'Lemonada', cursive;
 }
 // PALETA DE COLORES
 $blanco: #FFFFFF;
@@ -106,7 +103,7 @@ div.title{
 }
 
 #destinos{
-    font-weight: bold;
+    font-weight: 400;
         @media (max-width: 576px){
         margin: 0 25px 0 25px;
     }
@@ -236,101 +233,61 @@ div.title{
     filter: opacity(0.6);
 }
 
-// GALERIA
-.bg-img{
-    position: fixed;
+// EVENTOS
+.espacio{
+    height: 100px;
+}
+
+.justificado{
+    text-align: justify;
+}
+
+.bg-img-eventos{
+    position: absolute;
     top: 56px;
     right: 0;
     z-index: -1;
     margin: 0%;
     width: 100%;
-    height: calc(100vh - 56px);
-    max-height: 1200px;
-    background-image: url(/img/playa-la-balconada.jpg);
-    background-repeat: repeat;
+    height: 157vh;
+    background-image: url(/img/Cabo-Polonio.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    filter: opacity(0.8);
+    filter: opacity(0.6);
+}
+.lead{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 50px;
 }
 
-.text-bg {
-    height: calc(100vh - 56px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+// GALERIA
 .centrado-galeria{
     height: calc(100vh - 56px);
-    margin-top: 25%;
+    margin-top: 8%;
 }
 
-
-.gallery {
-    width: 60%;
+div.gallery {
+    width: 45%;
     margin: 15px auto;
     display: flex;
 }
 
-.gallery:hover {
-    border: 1px solid #777;
-    filter: blur(1px);
-}
 
-.gallery img {
+div.gallery img {
     width: 100%;
     height: auto;
+    transition: .5s;
+    &:hover{
+        border: 1px solid #777;
+        filter: brightness(0.5);
+    }
 }
 
 
 
-
-
-
-// .images{
-//     width: 250px;
-//     margin-bottom: 20px;
-// }
-
-// .flexbox{
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-evenly;
-// }
-
-// .cajas{
-//     width: 400px;
-//     display: inline-block;
-// }
-
-
-// .animacion{
-//     animation-name: example;
-//     animation-iteration-count: infinite;
-//     animation-timing-function: ease-in;
-//     animation-duration: 3s;
-// }
-// @keyframes example{
-//     from {background-color: $blanco;}
-//     to {background-color: $celeste;}
-// }
-
-
-// div.enero{
-//     @media (max-width: 576px) {
-//         background-color: $azul-claro;
-//     }
-// }
-
-// #contenedor_carousel_rincones{
-//     max-width: 1000px;
-//     margin: 0 auto;
-// }
-
-// .completas{
-//     width: 100%;
-// }
 // CONTACTO
 .formulario{
     border: 4px solid $azul-oscuro;
@@ -356,7 +313,7 @@ div.title{
     filter: opacity(0.5);
 }
 
-
+// FOOTER
 footer.footer{
     background-color: $azul-oscuro;
     overflow: hidden;
@@ -370,12 +327,12 @@ footer.footer{
     font-size: small;
 }
 
-.img-fluid{
-    transition: all .5s;
-    &:hover{
-        filter: sepia(1.5);
-    }
-}
+// .img-fluid{
+//     transition: all .5s;
+//     &:hover{
+//         filter: sepia(1.5);
+//     }
+// }
 
 
 
