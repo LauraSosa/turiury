@@ -25,7 +25,6 @@ div.title{
     h1{
         text-shadow: 2px 2px 8px $blanco;
         font-size: 40px;
-
         @media (max-width: 576px) {
             font-size: 25px;
         }
@@ -33,19 +32,6 @@ div.title{
     }
 }
 
-.bandera{
-    animation-name: deslizar;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-}
-@keyframes deslizar {
-    from {
-    margin-top: -100%;
-    }
-    to {
-    margin-left: 0;
-    }
-}
 .boton {
     background-color: $azul-oscuro;
     border: 1px;
